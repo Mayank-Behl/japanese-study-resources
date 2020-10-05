@@ -1,0 +1,266 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #18db63, #0b9159 );
+    padding: 0; 
+
+}
+.navbar-brand img
+{
+    height: 3rem;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0, 10px;
+}
+.navbar-nav li a
+{   
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 1.7rem !important;
+}
+.navbar-toggler
+{
+    outline: none  !important ; 
+}
+
+/*------------------------------------------------TITLE --------------------------------------------*/
+.title::before
+{
+    content: '';
+    background: rgb(15, 180, 28);
+    height: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+
+}
+.title::after
+{
+    content: '';
+    background: rgb(9, 167, 22);
+    height: 10px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+
+}
+/*-----------------------------------------------KANJI RESOURCE INFO--------------------------------------------*/
+#res-resources
+{
+    background: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.res-resources .res-top-text
+{
+    margin-left: 50px;
+    text-align: left;
+}
+.res-resources .res-items li
+{
+    margin-left: 78px;
+    color: rgb(9, 167, 22);
+    padding: 3.5px 0;
+}
+
+/*
+.kanji-resources .kanji-item-heading
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 48px;
+} 
+*/
+
+
+
+/*--------------------------------------------------KANJI WEBSITE ------------------------------------------*/
+.res-website .website-heading
+{
+    margin-top: 50px;
+    margin-left: 35px;
+    color: rgb(21, 184, 34);
+
+}
+.res-website .website-detail
+{
+    margin-top: 50px;
+
+    padding-bottom: 20px;
+    margin-left: 3px;
+    text-align: justify;
+}
+
+.website-img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------------------------------NEWsLETTER-------------------------------------------------------*/
+#news-letter
+{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    margin-bottom: 82px;
+}
+
+.news-letter .text-spacing 
+{
+    margin-left: 50px;
+    text-align: left;
+}
+.news-letter .form-spacing
+{
+    margin-left: 50px;
+    
+}
+
+.news-letter .form-control
+{
+    box-shadow: none !important; 
+    
+    border-color: black;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 3000px;
+    
+}
+.news-letter .btn-primary
+{
+    box-shadow: none !important; 
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image:linear-gradient(to right, #18db63, #0b9159 );
+ 
+}
+.news-letter img
+{
+    margin-top: none;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    width: 250px;   
+}
+
+
+/*------------------------------------------FOOTER SECTION-----------------------------------------------*/
+
+#footer
+{
+    background-image:linear-gradient(to right, #18db63, #0b9159 );
+    color: #fff;
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 3.5rem;
+    text-align: justify;
+
+}
+.footer-box
+{ 
+    padding-bottom: 20px;
+  
+}
+.footer-box img
+{
+    height: 42px;
+    margin-bottom: 5px;
+    /*padding-left: 20px;*/
+}
+/*.footer-text
+{
+    margin-left: 28px;
+}
+*/
+.footer-box .fa
+{
+    margin-top: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-bottom: 2px;
+    background-image:linear-gradient(to right, #18db63, #0b9159 );
+}
+
+
+
+
+.footer-box .form-control
+{
+    box-shadow: none !important; 
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary
+{
+    box-shadow: none !important; 
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image:linear-gradient(to right, #18db63, #0b9159 );
+ 
+}
+
+/*.footer-box .signup-text
+{
+    margin-left: 12px;
+    margin-top: 20px;
+}
+*/
+hr
+{
+    background-color: #fff;
+    align-self: center;
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------Scroll adjustments------------------------------------------------*/
+#res-website, #res-app, #res-book, #footer {
+    padding-top: 100px;
+    margin-top: -80px;
+
+    }
+#res-letter
+{
+    padding-top: 100px;
+    margin-top: -150px; 
+}
