@@ -15,7 +15,7 @@ if(isset($_POST['submit-button'])) {
 		$message = 'Email cannot be blank';
 		echo "<script>
         alert('$message')
-        window.location.replace('http://japanesestudyresources.epizy.com/?#news-letter');
+        window.location.replace('http://japanesestudyresources.infinityfreeapp.com/?#news-letter');
     	</script>";
 		//echo '<script>alert("Email cannot be blank")</script>'; 
 		//header("Location: ../index.php?");
@@ -27,14 +27,14 @@ if(isset($_POST['submit-button'])) {
 		$message = 'Please enter a valid Email address ';
 		echo "<script>
         alert('$message')
-        window.location.replace('http://japanesestudyresources.epizy.com/?#news-letter');
+        window.location.replace('http://japanesestudyresources.infinityfreeapp.com/?#news-letter');
     	</script>";
 		exit();	
 	}
 
 
     else {
-        $sql = "SELECT emailUsers FROM users WHERE emailUsers=?";
+        $sql = "SELECT email FROM jsr_table WHERE email=?";
         $stmt = mysqli_stmt_init($conn);
 		
 		
@@ -61,12 +61,12 @@ if(isset($_POST['submit-button'])) {
             echo "
             <script>
 			window.alert('$message')
-			window.location.replace('http://japanesestudyresources.epizy.com/?');
+			window.location.replace('http://japanesestudyresources.infinityfreeapp.com/?');
 			</script>";
             exit();
         }
         else {
-            $sql = "INSERT INTO users (emailUsers) VALUES(?)";
+            $sql = "INSERT INTO jsr_table (email) VALUES(?)";
 			$stmt = mysqli_stmt_init($conn);
 			
 
@@ -83,7 +83,7 @@ if(isset($_POST['submit-button'])) {
                 $message = 'You are now subscribed to the Newsletter';
                 echo "<script>
                 alert('$message')
-                window.location.replace('http://japanesestudyresources.epizy.com/#resources');
+                window.location.replace('http://japanesestudyresources.infinityfreeapp.com/#resources');
                 </script>";
                 exit();
             }         
