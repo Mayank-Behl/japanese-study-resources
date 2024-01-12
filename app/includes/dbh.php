@@ -1,9 +1,9 @@
 <?php
 
-$servername = "sql206.epizy.com";
-$dBUsername = "epiz_26067994";
-$dBPassword = "XZHOtI8IR357R";
-$dBName = "epiz_26067994_emailsubmit";
+$servername = "";
+$dBUsername = "";
+$dBPassword = "";
+$dBName = "";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, "$dBName");
 
